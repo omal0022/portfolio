@@ -12,13 +12,28 @@ body {
     background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(0, 0%, 0%, 0.1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
 }
 
+.nav-item {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
 .hero {
     background-image: url('../images/vintage-computer.png');
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size:cover;
     border-bottom-right-radius: 100px;
 }
 
+.hero-image {
+    display: none;
+}
+.hero-text {
+    text-align: center;
+}
 .btn-primary {
     box-shadow: -8px -8px 0px #8C6D2C;
     --bs-btn-color: #fff;
@@ -135,4 +150,13 @@ p {
 
 input[type=text], input[type=email] {
     border-color: #8C6D2C;
+}
+
+/* +++++++ Breakpoint MD +++++++ */
+
+@media screen and (min-width: 768px) {
+
+
+
+
 }
