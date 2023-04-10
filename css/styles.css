@@ -5,40 +5,21 @@
     --bs-secondary-rgb: 221,128,179;
     --bs-primary-bg-subtle: #E8E2D4;
     --bs-emphasis-color-rgb: 255,255,255;
+    --bs-secondary-emphasis: #8C6D2C;
 }
 
 body {
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(0, 0%, 0%, 0.2)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(0, 0%, 0%, 0.1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
 }
 
 .hero {
     background-image: url('../images/vintage-computer.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto;
+    border-bottom-right-radius: 100px;
 }
 
 .btn-primary {
-    box-shadow: -8px -8px 0px #dd80b3;
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #E82320;
-    --bs-btn-border-color: #E82320;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg:#dd80b3;
-    --bs-btn-hover-border-color: #dd80b3;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #dd80b3;
-    --bs-btn-active-border-color: #dd80b3;
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #dd80b3;
-    --bs-btn-disabled-border-color: #dd80b3;
-}
-
-.btn-primary:hover {
-    box-shadow: -8px -8px 0px #8C6D2C;
-}
-
-.btn-secondary {
     box-shadow: -8px -8px 0px #8C6D2C;
     --bs-btn-color: #fff;
     --bs-btn-bg: #3F3E21;
@@ -55,6 +36,103 @@ body {
     --bs-btn-disabled-border-color: #E82320;
 }
 
-.btn-secondary:hover {
+.btn {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.btn-primary:hover {
     box-shadow: -8px -8px 0px #DD80B3;
+}
+.btn-secondary{
+    box-shadow: -8px -8px 0px #dd80b3;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #E82320;
+    --bs-btn-border-color: #E82320;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:#dd80b3;
+    --bs-btn-hover-border-color: #dd80b3;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #dd80b3;
+    --bs-btn-active-border-color: #dd80b3;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #dd80b3;
+    --bs-btn-disabled-border-color: #dd80b3;
+}
+
+.btn-secondary:hover {
+    box-shadow: -8px -8px 0px #8C6D2C;
+}
+
+.btn-secondary[type=submit] {
+    box-shadow: none;
+}
+
+h1 {
+font-family: "swear-display", serif;
+font-size: 3rem;
+font-weight: bold;
+font-style: italic;
+}
+
+.hero h1 {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    color: var(--bs-secondary);
+}
+
+h4 {
+font-family: "futura-pt", sans-serif;
+font-weight: 300;
+font-style: italic;
+}
+
+h2 {
+font-family: "swear-display", serif;
+font-size: 3rem;
+font-weight: 500;
+font-style: normal;
+}
+
+h3 {
+    font-family: "swear-display", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+p {
+    font-family: "futura-pt", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-weight: 100;
+    font-style: italic; 
+    color: var(--bs-secondary-emphasis);
+}
+.education-credentials {
+    background-color: #EDF3F2;
+}
+
+.about h3 {
+    color: var(--bs-primary);
+}
+
+.education-credentials h4 {
+    color: var(--bs-primary);
+}
+
+.education-credentials li {
+    color: #7F7F7F;
+}
+
+.portfolio-img, .contact-img {
+    border-top-right-radius: 100px;
+}
+
+.about-img {
+    border-top-left-radius: 100px;
+}
+
+input[type=text], input[type=email] {
+    border-color: #8C6D2C;
 }
