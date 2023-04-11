@@ -82,6 +82,26 @@ body {
     box-shadow: none;
 }
 
+.nav-button {
+    box-shadow: -8px -8px 0px #8C6D2C;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #DD80B3;
+    --bs-btn-border-color: #DD80B3;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:#8C6D2C;
+    --bs-btn-hover-border-color: #8C6D2C;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #dd80b3;
+    --bs-btn-active-border-color: #dd80b3;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #dd80b3;
+    --bs-btn-disabled-border-color: #dd80b3;
+}
+
+.nav-button:hover {
+    box-shadow: -8px -8px 0px #DD80B3;
+}
 h1 {
 font-family: "swear-display", serif;
 font-size: 3rem;
