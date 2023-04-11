@@ -16,18 +16,26 @@
     <title>Portfolio</title>
 </head>
 <body id="top">
+
+  <ul class="skip-links visually-hidden-focusable bg-primary text-white m-0"> <!-- Skip links for accessibility -->
+    <li><a class="visually-hidden-focusable" href="#main-nav">Skip to main nav</a></li>
+    <li><a class="visually-hidden-focusable" href="#portfolio">Skip to Portfolio</a></li>
+    <li><a class="visually-hidden-focusable" href="#about">Skip to About</a></li>
+    <li><a class="visually-hidden-focusable" href="#contact">Skip to Contact</a></li>
+  </ul>
+
     <header>
 
-      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme-dark>
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" id="main-nav">
         <div class="container">
-          <a class="navbar-brand mx-auto" href="#">
+          <a class="navbar-brand mx-auto mx-md-0" href="#">
             <img class="img-fluid " src="images/wordmark-merrill-omalley.png" alt="Merrill O'Malley" width="175" height="auto">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-center">
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto me-md-4 text-center">
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
@@ -64,9 +72,9 @@
     </section>
 
     <section id="cards" class="section container-fluid">
-<div class="d-flex justify-content-md-around row gap-3 mx-4">
+<div class="d-flex justify-content-md-around row gap-4 mx-4">
     <div class="card col-md px-0 bg-transparent border-0 mb-4">
-      <img src="../images/portfolio-image.png" class="image card-img-top portfolio-img" alt="womens hands using a vintage computer">
+      <img src="../images/portfolio-image.png" class="image card-img-top portfolio-img shadow" alt="womens hands using a vintage computer">
       <div class="card-body">
         <h3 class="card-title">Portfolio</h3>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -76,7 +84,7 @@
 
 
     <div class="card col-md px-0 bg-transparent border-0 mb-4">
-      <img src="../images/about-us-image.png" class="image about-img card-img-top" alt="women's hands using a vintage turntable">
+      <img src="../images/about-us-image.png" class="image about-img card-img-top shadow" alt="women's hands using a vintage turntable">
       <div class="card-body">
         <h3 class="card-title">About</h3>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -85,7 +93,7 @@
     </div>
 
     <div class="card col-md px-0 mb-5 bg-transparent border-0">
-      <img src="../images/contact-us-image.png" class="contact-img card-img-top" alt="...">
+      <img src="../images/contact-us-image.png" class="contact-img card-img-top shadow" alt="...">
       <div class="card-body">
         <h3 class="card-title">Contact</h3>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -97,10 +105,10 @@
 
     </main>
     
-    <footer class="container-fluid bg-secondary row m-0">
+    <footer class="container-fluid bg-secondary row mx-auto">
       <div class="col-md text-white">
     <ul class="footer-nav list-unstyled me-auto mb-2 mb-lg-0 py-5">
-      <li class="nav-item">
+      <li class="nav-item ">
           <a class="nav-link" href="index.html">Home</a>
         </li>
       <li class="nav-item">
