@@ -21,19 +21,16 @@ body {
     opacity: 1;
 }
 
-.hero {
-    background-image: url('../images/vintage-computer.png');
-    background-repeat: no-repeat;
-    background-size:cover;
+.hero-image, .hero {
     border-bottom-right-radius: 100px;
 }
 
-.hero-image {
-    display: none;
-}
+
 .hero-text {
     text-align: center;
+    margin-top: -250px;
 }
+
 .btn-primary {
     box-shadow: -8px -8px 0px #8C6D2C;
     --bs-btn-color: #fff;
@@ -156,7 +153,19 @@ input[type=text], input[type=email] {
 
 @media screen and (min-width: 768px) {
 
+.hero-text {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    margin-right: -250px;
+    z-index: 1;
+}
 
+.hero-image {
+    border-bottom-left-radius: 100px; 
+    border-bottom-right-radius: 0px;
+}
 
-
+.hero {
+    border-bottom-right-radius: 0px;
+}
 }
