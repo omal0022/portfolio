@@ -55,23 +55,23 @@ body {
     text-transform: uppercase;
 }
 .btn-primary:hover {
-    box-shadow: -8px -8px 0px #DD80B3;
+    box-shadow: -8px -8px 0px var(--bs-secondary);
 }
 .btn-secondary{
-    box-shadow: -8px -8px 0px #dd80b3;
+    box-shadow: -8px -8px 0px var(--bs-secondary);
     --bs-btn-color: #fff;
     --bs-btn-bg: #E82320;
     --bs-btn-border-color: #E82320;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg:#dd80b3;
-    --bs-btn-hover-border-color: #dd80b3;
+    --bs-btn-hover-bg:var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--bs-secondary);
     --bs-btn-focus-shadow-rgb: 49,132,253;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #dd80b3;
-    --bs-btn-active-border-color: #dd80b3;
+    --bs-btn-active-bg:var(--bs-secondary);
+    --bs-btn-active-border-color: var(--bs-secondary);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #dd80b3;
-    --bs-btn-disabled-border-color: #dd80b3;
+    --bs-btn-disabled-bg: var(--bs-secondary);
+    --bs-btn-disabled-border-color: var(--bs-secondary);
 }
 
 .btn-secondary:hover {
@@ -102,6 +102,7 @@ body {
 .nav-button:hover {
     box-shadow: -8px -8px 0px #DD80B3;
 }
+
 h1 {
 font-family: "swear-display", serif;
 font-size: 3rem;
@@ -151,6 +152,15 @@ p {
     border-top-right-radius: 100px;
 }
 
+.contact-form{
+    border-top-left-radius: 75px;
+}
+
+.card h3 {
+    color: var(--bs-primary);
+    font-size: 2rem;
+}
+
 .about h3 {
     color: var(--bs-primary);
 }
@@ -163,10 +173,6 @@ p {
     color: #7F7F7F;
 }
 
-.portfolio-img, .contact-img {
-    border-top-right-radius: 100px;
-}
-
 .bio-img {
     border-top-right-radius: 100px;
     object-fit:cover; /* Do not scale the image */
@@ -176,13 +182,56 @@ p {
     margin-bottom: 1rem;
       }
 
-.about-img {
-    border-top-left-radius: 100px;
-}
 
 input[type=text], input[type=email] {
     border-color: #8C6D2C;
 }
+
+.hero h4 {
+    color:#E8E2D4;
+}
+
+footer p {
+    font-size: small;
+}
+
+.image-hover {
+    border-top-right-radius: 100px;
+}
+
+.image-hover-left {
+    border-top-left-radius: 100px;
+}
+
+.image-hover {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;            /* clip the excess when child gets bigger than parent */
+  }
+  .image-hover img {
+    display: block;
+    transition: transform .4s;   /* smoother zoom */
+  }
+  .image-hover:hover img {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+  }
+
+  .image-hover-left {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;            /* clip the excess when child gets bigger than parent */
+  }
+  .image-hover-left img {
+    display: block;
+    transition: transform .4s;   /* smoother zoom */
+  }
+  .image-hover-left:hover img {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+  }
 
 /* +++++++ Breakpoint MD +++++++ */
 
