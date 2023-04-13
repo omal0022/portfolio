@@ -241,6 +241,9 @@ footer p {
     transform-origin: 50% 50%;
   }
 
+ picture {
+    height: 300px;
+  }
   .social-icons a {
     color: white;
   }
@@ -257,6 +260,12 @@ footer p {
     justify-content: center;
     text-align:center;
   }
+
+  .mm-masonry {
+    --_col-width: 100;
+    --_gap: 8;
+  }
+
 /* +++++++ Breakpoint MD +++++++ */
 
 @media screen and (min-width: 768px) {
