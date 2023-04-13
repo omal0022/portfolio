@@ -6,12 +6,14 @@
     --bs-primary-bg-subtle: #E8E2D4;
     --bs-emphasis-color-rgb: 255,255,255;
     --bs-secondary-emphasis: #8C6D2C;
+   
 }
-
+main {
+    width: 100%;
+}
 body {
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(0, 0%, 0%, 0.1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='0.5' stroke='hsla(0, 0%, 0%, 0.1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>"); 
 }
-
 
 .nav-item {
     font-family: "futura-pt", sans-serif;
@@ -19,7 +21,10 @@ body {
     font-style: italic;
     text-transform: uppercase;
     font-size: 1.5rem;
-    opacity: 1;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .hero-image, .hero {
@@ -103,6 +108,10 @@ body {
     box-shadow: -8px -8px 0px #DD80B3;
 }
 
+.custom-toggler.navbar-toggler {
+    border-color: lightgreen;
+}
+
 h1 {
 font-family: "swear-display", serif;
 font-size: 3rem;
@@ -111,7 +120,7 @@ font-style: italic;
 color: #E82320;
 }
 
-.hero h1 {
+.hero h1, .hero h4 {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
     color: var(--bs-secondary);
 }
@@ -137,6 +146,7 @@ h3 {
     font-family: "swear-display", serif;
     font-weight: 400;
     font-style: normal; 
+    color: var(--bs-secondary-emphasis);
 }
 
 p {
@@ -146,6 +156,10 @@ p {
     font-weight: 100;
     font-style: italic; 
     color: var(--bs-secondary-emphasis);
+}
+
+.welcome-text p {
+    color: var(--bs-primary);
 }
 .education-credentials {
     background-color: #EDF3F2;
@@ -175,11 +189,9 @@ p {
 
 .bio-img {
     border-top-right-radius: 100px;
-    object-fit:cover; /* Do not scale the image */
-    object-position: center; /* Center the image within the element */
-    width: 500px;
-    max-height: 500px;
-    margin-bottom: 1rem;
+    object-fit:cover;
+    object-position: center; 
+    max-height: 450px;
       }
 
 
@@ -187,9 +199,6 @@ input[type=text], input[type=email] {
     border-color: #8C6D2C;
 }
 
-.hero h4 {
-    color:#E8E2D4;
-}
 
 footer p {
     font-size: small;
@@ -207,11 +216,11 @@ footer p {
     display: inline-block;
     margin: 20px;
     border: 1px solid black;
-    overflow: hidden;            /* clip the excess when child gets bigger than parent */
+    overflow: hidden;         
   }
   .image-hover img {
     display: block;
-    transition: transform .4s;   /* smoother zoom */
+    transition: transform .4s;
   }
   .image-hover:hover img {
     transform: scale(1.2);
@@ -221,18 +230,33 @@ footer p {
   .image-hover-left {
     display: inline-block;
     margin: 20px;
-    border: 1px solid black;
-    overflow: hidden;            /* clip the excess when child gets bigger than parent */
+    overflow: hidden;           
   }
   .image-hover-left img {
     display: block;
-    transition: transform .4s;   /* smoother zoom */
+    transition: transform .4s;
   }
   .image-hover-left:hover img {
     transform: scale(1.2);
     transform-origin: 50% 50%;
   }
 
+  .social-icons a {
+    color: white;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .footer-nav {
+    display: grid;
+    justify-content: center;
+    text-align:center;
+  }
 /* +++++++ Breakpoint MD +++++++ */
 
 @media screen and (min-width: 768px) {
@@ -258,4 +282,11 @@ footer p {
 .navbar-nav {
  justify-content: space-around;
 }
+
+.footer-nav {
+    display: grid;
+    justify-content:left;
+    text-align:left;
+    padding-left: 5rem;
+  }
 }
