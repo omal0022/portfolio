@@ -199,6 +199,13 @@ input[type=text], input[type=email] {
     border-color: #8C6D2C;
 }
 
+.portfolio h4 {
+    color: var(--bs-secondary-emphasis);
+}
+
+.portfolio a:active, .portfolio a:visited {
+    color: var(--bs-secondary-emphasis);
+}
 
 footer p {
     font-size: small;
@@ -215,7 +222,6 @@ footer p {
 .image-hover {
     display: inline-block;
     margin: 20px;
-    border: 1px solid black;
     overflow: hidden;         
   }
   .image-hover img {
@@ -232,10 +238,12 @@ footer p {
     margin: 20px;
     overflow: hidden;           
   }
+
   .image-hover-left img {
     display: block;
     transition: transform .4s;
   }
+  
   .image-hover-left:hover img {
     transform: scale(1.2);
     transform-origin: 50% 50%;
@@ -261,31 +269,7 @@ footer p {
     justify-content: center;
     text-align:center;
   }
-/* IMAGE GALLERY */
-
-  /* .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-  }
-  
-  .image-gallery > li {
-    flex: 1 1 auto;
-    height: 400px;
-    position: relative;
-  }
-  
-  .image-gallery li img {
-    object-fit: cover;
-    width: auto;
-    height: 100%;
-    vertical-align: middle;
-  }
-
-  .image-gallery li{
-    list-style-type: none
-
-  } */
+/* IMAGE GALLERY - code from Pierre Lizet - link in READ ME */
 
   .grid {
     column-count: 4;
@@ -296,13 +280,13 @@ footer p {
     width: 100%;
   }
   
-  img {
+  .grid img {
     height: auto;
     max-width: 100%;
     margin-bottom: .5em;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
   }
-  
+
   @media(max-width: 800px) {
       .grid {
         column-count: 3;
