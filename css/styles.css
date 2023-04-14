@@ -192,7 +192,7 @@ p {
     object-fit:cover;
     object-position: center; 
     max-height: 450px;
-      }
+ }
 
 
 input[type=text], input[type=email] {
@@ -243,7 +243,7 @@ footer p {
     display: block;
     transition: transform .4s;
   }
-  
+
   .image-hover-left:hover img {
     transform: scale(1.2);
     transform-origin: 50% 50%;
@@ -269,12 +269,11 @@ footer p {
     justify-content: center;
     text-align:center;
   }
-/* IMAGE GALLERY - code from Pierre Lizet - link in READ ME */
+/* IMAGE GALLERY - code from Pierre Lizet - link in README */
 
   .grid {
     column-count: 4;
     column-gap: .5em;
-    row-gap: 3em;
     max-width: 1200px;
     margin: auto;
     width: 100%;
