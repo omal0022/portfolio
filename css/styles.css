@@ -244,6 +244,7 @@ footer p {
  picture {
     height: 300px;
   }
+
   .social-icons a {
     color: white;
   }
@@ -260,10 +261,64 @@ footer p {
     justify-content: center;
     text-align:center;
   }
+/* IMAGE GALLERY */
 
-  .mm-masonry {
-    --_col-width: 100;
-    --_gap: 8;
+  /* .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  
+  .image-gallery > li {
+    flex: 1 1 auto;
+    height: 400px;
+    position: relative;
+  }
+  
+  .image-gallery li img {
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .image-gallery li{
+    list-style-type: none
+
+  } */
+
+  .grid {
+    column-count: 4;
+    column-gap: .5em;
+    row-gap: 3em;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: .5em;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3)
+  }
+  
+  @media(max-width: 800px) {
+      .grid {
+        column-count: 3;
+    }
+  }
+  
+  @media(max-width: 600px) {
+      .grid {
+        column-count: 2;
+    }
+  }
+  
+  @media(max-width: 400px) {
+      .grid {
+        column-count: 1;
+    }
   }
 
 /* +++++++ Breakpoint MD +++++++ */
