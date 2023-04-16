@@ -277,6 +277,11 @@ footer p {
     justify-content: center;
     text-align:center;
   }
+
+  footer .active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
 /* IMAGE GALLERY - code from Pierre Lizet - link in README */
 
   .grid {
