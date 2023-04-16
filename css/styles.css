@@ -342,3 +342,5 @@ footer p {
     padding-left: 5rem;
   }
 }
+
+/* Animate CSS already supports @media (prefers-reduced-motion) */
