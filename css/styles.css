@@ -6,8 +6,9 @@
     --bs-primary-rgb: 30,104,88;
     --bs-secondary-rgb: 221,128,179;
     --bs-primary-bg-subtle: #E8E2D4;
-    --bs-emphasis-color-rgb: 255,255,255;
+    --bs-emphasis-color: #E82320;
     --bs-secondary-emphasis: #8C6D2C;
+    --bs-secondary-emphasis-dark:#3F3E21;
 
 }
 
@@ -41,20 +42,20 @@ body {
 }
 
 .btn-primary {
-    box-shadow: -8px -8px 0px #8C6D2C;
+    box-shadow: -8px -8px 0px var(--bs-secondary-emphasis);
     --bs-btn-color: #fff;
-    --bs-btn-bg: #3F3E21;
-    --bs-btn-border-color: #3F3E21;
+    --bs-btn-bg: var(--bs-secondary-emphasis-dark);
+    --bs-btn-border-color:var(--bs-secondary-emphasis-dark);
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg:#E82320;
-    --bs-btn-hover-border-color: #E82320;
+    --bs-btn-hover-bg:var(--bs-emphasis-color);
+    --bs-btn-hover-border-color: var(--bs-emphasis-color);
     --bs-btn-focus-shadow-rgb: 49,132,253;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #E82320;
-    --bs-btn-active-border-color: #E82320;
+    --bs-btn-active-bg: var(--bs-emphasis-color);
+    --bs-btn-active-border-color: var(--bs-emphasis-color);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #E82320;
-    --bs-btn-disabled-border-color: #E82320;
+    --bs-btn-disabled-bg: var(--bs-emphasis-color);
+    --bs-btn-disabled-border-color: var(--bs-emphasis-color);
 }
 
 .btn {
@@ -69,12 +70,12 @@ body {
 .btn-secondary{
     box-shadow: -8px -8px 0px var(--bs-secondary);
     --bs-btn-color: #fff;
-    --bs-btn-bg: #E82320;
-    --bs-btn-border-color: #E82320;
+    --bs-btn-bg:var(--bs-emphasis-color);
+    --bs-btn-border-color: var(--bs-emphasis-color);
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg:var(--bs-secondary);
     --bs-btn-hover-border-color: var(--bs-secondary);
-    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-focus-shadow-rgb: (--bs-secondary);
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg:var(--bs-secondary);
     --bs-btn-active-border-color: var(--bs-secondary);
@@ -84,7 +85,7 @@ body {
 }
 
 .btn-secondary:hover {
-    box-shadow: -8px -8px 0px #8C6D2C;
+    box-shadow: -8px -8px 0px var(--bs-secondary-emphasis);
 }
 
 .btn-secondary[type=submit] {
@@ -92,28 +93,24 @@ body {
 }
 
 .nav-button {
-    box-shadow: -8px -8px 0px #8C6D2C;
+    box-shadow: -8px -8px 0px var(--bs-secondary-emphasis);
     --bs-btn-color: #fff;
-    --bs-btn-bg: #DD80B3;
-    --bs-btn-border-color: #DD80B3;
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color:var(--bs-secondary);
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg:#8C6D2C;
-    --bs-btn-hover-border-color: #8C6D2C;
+    --bs-btn-hover-bg:var(--bs-secondary-emphasis);
+    --bs-btn-hover-border-color: var(--bs-secondary-emphasis);
     --bs-btn-focus-shadow-rgb: 49,132,253;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #dd80b3;
-    --bs-btn-active-border-color: #dd80b3;
+    --bs-btn-active-bg: var(--bs-secondary);
+    --bs-btn-active-border-color: var(--bs-secondary);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #dd80b3;
-    --bs-btn-disabled-border-color: #dd80b3;
+    --bs-btn-disabled-bg: var(--bs-secondary);
+    --bs-btn-disabled-border-color: var(--bs-secondary);
 }
 
 .nav-button:hover {
-    box-shadow: -8px -8px 0px #DD80B3;
-}
-
-.custom-toggler.navbar-toggler {
-    border-color: lightgreen;
+    box-shadow: -8px -8px 0px var(--bs-secondary);
 }
 
 
@@ -122,7 +119,7 @@ font-family: "swear-display", serif;
 font-size: 3rem;
 font-weight: bold;
 font-style: italic;
-color: #E82320;
+color: var(--bs-emphasis-color);
 }
 
 .hero h1, .hero h4 {
@@ -163,8 +160,8 @@ p {
     color: var(--bs-secondary-emphasis);
 }
 
-.welcome-text p {
-    color: var(--bs-primary);
+.welcome-text h4 {
+    color: var(--bs-secondary);
 }
 .education-credentials {
     background-color: #EDF3F2;
@@ -189,6 +186,10 @@ p {
 }
 
 .education-credentials li {
+    font-family: "futura-pt", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    font-weight: 100;
     color: #7F7F7F;
 }
 
@@ -201,7 +202,7 @@ p {
  }
 
 input[type=text], input[type=email] {
-    border-color: #8C6D2C;
+    border-color: var(--bs-secondary-emphasis);
 }
 
 .portfolio h4 {
