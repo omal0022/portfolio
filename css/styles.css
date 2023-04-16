@@ -1,3 +1,5 @@
+
+
 :root {
     --bs-primary: #1E6858;
     --bs-secondary: #DD80B3;
@@ -6,8 +8,10 @@
     --bs-primary-bg-subtle: #E8E2D4;
     --bs-emphasis-color-rgb: 255,255,255;
     --bs-secondary-emphasis: #8C6D2C;
-   
+
 }
+
+
 main {
     width: 100%;
 }
@@ -112,6 +116,7 @@ body {
     border-color: lightgreen;
 }
 
+
 h1 {
 font-family: "swear-display", serif;
 font-size: 3rem;
@@ -187,13 +192,13 @@ p {
     color: #7F7F7F;
 }
 
-.bio-img {
+.bio-img img{
     border-top-right-radius: 100px;
     object-fit:cover;
     object-position: center; 
     max-height: 450px;
+    width: 100%;
  }
-
 
 input[type=text], input[type=email] {
     border-color: #8C6D2C;

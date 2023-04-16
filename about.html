@@ -10,6 +10,12 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+    <!-- Animate CSS Animation framework -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
     <!-- ++++ My styles ++++ -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -30,13 +36,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 mx-auto me-md-4 text-center">
               <li class="nav-item mx-4">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-4">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link active" href="about.html">About</a>
               </li>
               <li><a href="contact.html" class="btn nav-button px-4 py-2 mx-auto mx-md-5 my-4 my-md-auto">Contact Us</a></li>
             </ul>
@@ -47,9 +53,38 @@
 
     <main>
 <section class="section container-fluid">
-    <div class="container row justify-content-center">
-    <img class="bio-img col-md-5 m-5 p-0 float-start shadow" src="images/merrill-omalley-portrait.jpg" alt="portrait of Merrill looking at a cute dog in a yellow plaid shirt">
-    <div class="about col-md-5 mb-5 my-md-5">
+    <div class="container row justify-content-center mx-0">
+      <div class="bio-img col-md-5 col-lg-4 ">
+      <picture>
+        <source
+        srcset="images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-1200_x_1800.jpg 1x,
+        images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-2400_x_3600.jpg 2x,
+        images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-3600_x_5400.jpg 3x"
+        media="(min-width:1200px)"
+      />
+        <source
+        srcset="images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-992_x_1488.jpg 1x,
+        images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-1984_x_2976.jpg 2x,
+        images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-2976_x_4464.jpg 3x"
+        media="(min-width:992px)"
+      />
+      <source
+          srcset="images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-768_x_1152.jpg 1x,
+          images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-1536_x_2304.jpg 2x,
+          images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-2304_x_3456.jpg 3x"
+          media="(min-width:768px)"
+        />
+        <source 
+          srcset="images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-576_x_864.jpg 1x,
+          images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-1152_x_1728.jpg 2x,
+          images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-1728_x_2592.jpg 3x"
+          media="(min-width:576px)"
+        />
+        <img class="img-fluid shadow w-100 mx-auto mt-5 my-md-5" src="images/merrill-omalley-portrait-derivatives/merrill-omalley-portrait-992_x_1488.jpg" alt="portrait of Merrill O'Malley wearing a yellow plaid shirt sitting on a couch" />
+</picture>
+</div>
+    <!-- <img class="bio-img col-md-5 m-5 p-0 float-start shadow" src="images/merrill-omalley-portrait.jpg" alt="portrait of Merrill looking at a cute dog in a yellow plaid shirt"> -->
+    <div class="about col-md-6 mb-5 my-5">
         <h1 class="">About Me</h1>
         <h3 class="display-5">Bio</h3>
         <p class="bio">Hi, I’m Merrill. An Interactive Media Design student with a flair for creative expression. Having already worked in the fields of graphic design and digital illustration, I found myself yearning for a more diverse skill set, prompting my decision to pursue higher education where I rediscovered my love of learning. Outside of the classroom, I like to channel my creativity into textile arts, spending my free time sewing, quilting, and knitting.</p>
@@ -62,7 +97,6 @@
 </section>
 <section class="education-credentials section container-fluid py-5 ">
   <div class="container">
-
   <div class="row">
     <div class="col-md">
       <h4 class="">Education</h4>
